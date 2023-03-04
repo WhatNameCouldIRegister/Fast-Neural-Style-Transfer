@@ -9,6 +9,7 @@ from torchvision.utils import save_image
 from PIL import Image
 
 if __name__ == "__main__":
+    print(" This script is used to convert images ... ")
     parser = argparse.ArgumentParser()
     parser.add_argument("--image_path", type=str, required=True, help="Path to image")
     parser.add_argument("--checkpoint_model", type=str, required=True, help="Path to checkpoint model")

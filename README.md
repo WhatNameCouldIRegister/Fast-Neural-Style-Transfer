@@ -42,3 +42,13 @@ python3 test_on_video.py  --video_path <path-to-video> \
 python3 test_on_image.py  --image_path <path-to-image> \
                           --checkpoint_model <path-to-checkpoint> \
 ```
+
+
+## DD Test Demo
+
+```
+# Test on Video
+
+python test_on_video.py --video_path D:/GithubPrj/Fast-Neural-Style-Transfer/images/content/rowtaroVideo.mp4 --checkpoint_model D:\GithubPrj\Fast-Neural-Style-Transfer\style-transfer-models-20230129T081747Z-001\style-transfer-models\starry_night_10000.pth
+
+```

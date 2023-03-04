@@ -1,4 +1,6 @@
+import skvideo.io
 from models import TransformerNet
+
 from utils import *
 import torch
 from torch.autograd import Variable
@@ -6,7 +8,8 @@ import argparse
 import os
 import tqdm
 from PIL import Image
-import skvideo.io
+
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -38,7 +41,7 @@ if __name__ == "__main__":
 
     # Create video from frames
     video_name = args.video_path.split("/")[-1].split(".")[0]
-    writer = skvideo.io.FFmpegWriter(f"images/outputs/stylized-{video_name}.gif")
-    for frame in tqdm.tqdm(stylized_frames, desc="Writing to video"):
-        writer.writeFrame(frame)
-    writer.close()
+    #writer = skvideo.io.FFmpegWriter(f"images/outputs/stylized-{video_name}.gif")
+    #for frame in tqdm.tqdm(stylized_frames, desc="Writing to video"):
+    #    writer.writeFrame(frame)
+    #writer.close()
