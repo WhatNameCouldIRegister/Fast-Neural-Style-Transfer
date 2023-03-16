@@ -17,7 +17,7 @@ from concurrent import futures
 style_nums = 2
 content_dir = r"./images/content/"
 style_dir = r"./images/styles/"
-style_model_dir = r"./style-transfer-models-20230129T081747Z-001/style-transfer-models/"
+style_model_dir = r"./style-transfer-models-20230129T081747Z-001/"#style-transfer-models/"
 output_dir = r"./images/outputs/"
 temp_dir = r"./images/styles/"
 output_style_file_list = list()

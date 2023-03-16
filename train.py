@@ -61,7 +61,8 @@ if __name__ == "__main__":
 
     # Sample 8 images for visual evaluation of the model
     image_samples = []
-    for path in random.sample(glob.glob(f"{args.dataset_path}/*/*.png"), 8):
+    #for path in random.sample(glob.glob(f"{args.dataset_path}/*/*.png"), 8):
+    for path in random.sample(glob.glob(f"{args.dataset_path}/*/*.jpg"), 8):
         image_samples += [style_transform(args.image_size)(Image.open(path))]
     image_samples = torch.stack(image_samples)
 
